@@ -19,7 +19,7 @@ namespace MusicSelector
         private List<String> dirs = new List<String>();
         private FolderBrowserDialog FBDOpen = new FolderBrowserDialog();
         private WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
-        private bool switchPlayback = false;
+        private bool switchPlayback = true;
         private int MouseIndex;
         private Stack<String> fullRoute = new Stack<String>();
         private FolderBrowserDialog FBDKeep = new FolderBrowserDialog();
@@ -170,8 +170,7 @@ namespace MusicSelector
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String path = dirs[MouseIndex];
-            MessageBox.Show("Origen: "+ path+"\n"+"Destino: " + KeepSelectedPath + "\\" + Path.GetDirectoryName(path));
+            String path = dirs[listBox1.SelectedIndex];
             DirectoryCopy(path, KeepSelectedPath + "\\" + new DirectoryInfo(path).Name, true);
         }
 
