@@ -1,0 +1,15 @@
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\bin\Debug\MusicSelector.exe.config
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\bin\Debug\MusicSelector.exe
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\bin\Debug\MusicSelector.pdb
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.csprojAssemblyReference.cache
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.Form1.resources
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.Properties.Resources.resources
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.csproj.GenerateResource.cache
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.csproj.CoreCompileInputs.cache
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.exe
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.pdb
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\bin\Debug\Interop.WMPLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\Interop.WMPLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\VSPROJECTS\MusicSelector\MusicSelector\obj\Debug\MusicSelector.csproj.ResolveComReference.cache
