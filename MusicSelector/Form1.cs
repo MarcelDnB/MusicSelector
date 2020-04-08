@@ -59,9 +59,7 @@ namespace MusicSelector
              */
             MouseIndex = this.listBox1.IndexFromPoint(e.Location);
             String path = dirs[MouseIndex];
-
             List<String> dirNuevo = new List<String>(Directory.GetDirectories(path));
-
             listBox1.Items.Clear();
             foreach (String dir in dirNuevo)
             {
@@ -98,6 +96,7 @@ namespace MusicSelector
             if (wplayer.currentMedia == null)
             {
                 playBack();
+                listBox2.SelectedIndex = 0;
             }
             else if (wplayer.currentMedia.sourceURL.Contains(dirs[listBox1.SelectedIndex]))
             {
@@ -114,25 +113,28 @@ namespace MusicSelector
             else {
                 wplayer.controls.stop();
                 playBack();
+                listBox2.SelectedIndex = 0;
             }
 
         }
 
         private void playBack()
         {
-            wplayer.settings.volume = axSlider1.Value;
             String path = dirs[listBox1.SelectedIndex];
             List<String> songs = new List<String>(Directory.GetFiles(path));
             wplayer = new WMPLib.WindowsMediaPlayer();
             WMPLib.IWMPMedia wt;
+            listBox2.Items.Clear();
             foreach (String song in songs)
             {
                 if (song[song.Length-1] == '3' && song[song.Length - 2] == 'p' && song[song.Length - 3] == 'm') {
                     wt = wplayer.newMedia(song);
                     wplayer.currentPlaylist.appendItem(wt);
+                    listBox2.Items.Add(Path.GetFileName(song));
                 }
             }
             wplayer.controls.play();
+            wplayer.settings.volume = axSlider1.Value;
         }
 
         private void listBox1_MouseClick(object sender, MouseEventArgs e)
@@ -229,21 +231,30 @@ namespace MusicSelector
             listBox1.SelectedIndex = listBox1.SelectedIndex + 1;
             wplayer.controls.stop();
             playBack();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            wplayer.settings.volume = wplayer.settings.volume + 10;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            wplayer.settings.volume = wplayer.settings.volume - 10;
+            listBox2.SelectedIndex = 0;
         }
 
         private void slider_Scroll(object sender, EventArgs e)
         {
             wplayer.settings.volume = axSlider1.Value;
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            listBox2.SelectedIndex = listBox2.SelectedIndex - 1;
+            wplayer.controls.previous();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox2.SelectedIndex = listBox2.SelectedIndex + 1;
+            wplayer.controls.next();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
         }
     }
 }
