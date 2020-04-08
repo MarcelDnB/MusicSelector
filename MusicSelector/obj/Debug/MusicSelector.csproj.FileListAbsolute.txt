@@ -36,3 +36,4 @@ C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSele
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\AxInterop.MSComctlLib.dll
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\Interop.MSComctlLib.dll
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\AxInterop.MSComctlLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.Form2.resources
