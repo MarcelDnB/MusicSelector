@@ -42,6 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.MSComctlLib.dll" size="124416">
+      <assemblyIdentity name="AxInterop.MSComctlLib" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UCrKCY3cpg374RJtGs+Piqs2K/U3Dg/CYswLEtlTgKM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
       <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -49,7 +61,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n1zmAmi1rf/RAsKAj0mAeYRT1Sab3QQ1SYBlt5yfqAk=</dsig:DigestValue>
+        <dsig:DigestValue>Qc3tOHWV5yUI9WAnTnqZYgXatFzrQ5r61MKCgoFT2q0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.MSComctlLib.dll" size="217600">
+      <assemblyIdentity name="Interop.MSComctlLib" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ymjSHkTpAlJZ9XL30xAvWOzn6QoEms6DCIiRzxBo57I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>COeUtizveqBHljvBvjdZnglkz55zZf937L7J2U6FfdI=</dsig:DigestValue>
+        <dsig:DigestValue>S8DPw7oRpg28nhs1m5IjmE3TuhP0rI/rtEtwzj2r20U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicSelector.exe" size="15336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicSelector.exe" size="16872">
       <assemblyIdentity name="MusicSelector" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kTSMJp+jesac+yMPoPHsJQoNtP/QOpfnE8GW0VMjKjA=</dsig:DigestValue>
+        <dsig:DigestValue>Y/gkEJcZOEPLotmBY23B6nceDzBpUqDWAkRNqhZdhxM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -28,3 +28,11 @@ C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSele
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.csproj.CoreCompileInputs.cache
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.exe
 C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.pdb
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\MusicSelector.exe.manifest
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\MusicSelector.application
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.exe.manifest
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\MusicSelector.application
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\Interop.MSComctlLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\obj\Debug\AxInterop.MSComctlLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\Interop.MSComctlLib.dll
+C:\Users\Marcel\OneDrive - UNIVERSIDAD DE SEVILLA\GitHub\MusicSelector\MusicSelector\bin\Debug\AxInterop.MSComctlLib.dll

@@ -29,6 +29,8 @@ namespace MusicSelector
         public Form1()
         {
             InitializeComponent();
+            axSlider1.Max = 100;
+            wplayer.settings.volume = axSlider1.Value;
         }
 
         private void openFolder_Click(object sender, EventArgs e)
@@ -118,6 +120,7 @@ namespace MusicSelector
 
         private void playBack()
         {
+            wplayer.settings.volume = axSlider1.Value;
             String path = dirs[listBox1.SelectedIndex];
             List<String> songs = new List<String>(Directory.GetFiles(path));
             wplayer = new WMPLib.WindowsMediaPlayer();
@@ -226,6 +229,21 @@ namespace MusicSelector
             listBox1.SelectedIndex = listBox1.SelectedIndex + 1;
             wplayer.controls.stop();
             playBack();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            wplayer.settings.volume = wplayer.settings.volume + 10;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            wplayer.settings.volume = wplayer.settings.volume - 10;
+        }
+
+        private void slider_Scroll(object sender, EventArgs e)
+        {
+            wplayer.settings.volume = axSlider1.Value;
         }
     }
 }
