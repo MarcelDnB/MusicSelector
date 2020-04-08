@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicSelector.exe" size="16872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicSelector.exe" size="17384">
       <assemblyIdentity name="MusicSelector" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y/gkEJcZOEPLotmBY23B6nceDzBpUqDWAkRNqhZdhxM=</dsig:DigestValue>
+        <dsig:DigestValue>JPHbnlEazJNNrccuujQ6r97O9zg9dOMQPCJJ9OGrpL4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
