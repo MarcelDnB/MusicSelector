@@ -13,7 +13,7 @@ using System.Threading;
 using System.Collections;
 namespace MusicSelector
 {
-    
+
     public partial class Form1 : Form
     {
         private List<String> dirs = new List<String>();
@@ -25,12 +25,12 @@ namespace MusicSelector
         private FolderBrowserDialog FBDKeep = new FolderBrowserDialog();
         private String KeepSelectedPath;
 
-
         public Form1()
         {
             InitializeComponent();
             axSlider1.Max = 100;
             wplayer.settings.volume = axSlider1.Value;
+
         }
 
         private void openFolder_Click(object sender, EventArgs e)
@@ -65,15 +65,16 @@ namespace MusicSelector
             {
                 listBox1.Items.Add(Path.GetFileName(dir));
             }
-
             String spl = path;
             List<String> splited = new List<string>(spl.Split('\\'));
             String finalPrevPath = splited[0];
-            if (splited.Count == 1) {
+            if (splited.Count == 1)
+            {
                 finalPrevPath = finalPrevPath + "\\";
             }
 
-            for (int i = 1; i < splited.Count - 1; i++) {
+            for (int i = 1; i < splited.Count - 1; i++)
+            {
                 finalPrevPath = finalPrevPath + "\\" + splited[i];
             }
             fullRoute.Push(finalPrevPath + "\\");
@@ -110,7 +111,9 @@ namespace MusicSelector
                     wplayer.controls.play();
                 }
             }
-            else {
+            else
+            {
+                timer2.Enabled = false;
                 wplayer.controls.stop();
                 playBack();
                 listBox2.SelectedIndex = 0;
@@ -127,7 +130,14 @@ namespace MusicSelector
             listBox2.Items.Clear();
             foreach (String song in songs)
             {
-                if (song[song.Length-1] == '3' && song[song.Length - 2] == 'p' && song[song.Length - 3] == 'm') {
+                if (song.Contains(".png") || song.Contains(".jpg") || song.Contains(".jpeg")
+                || song.Contains(".ico"))
+                {
+                    pictureBox2.Image = Image.FromFile(song);
+
+                }
+                    if (song.Contains(".mp3") || song.Contains(".flac") || song.Contains(".wav") || song.Contains(".alac"))
+                {
                     wt = wplayer.newMedia(song);
                     wplayer.currentPlaylist.appendItem(wt);
                     listBox2.Items.Add(Path.GetFileName(song));
@@ -135,6 +145,7 @@ namespace MusicSelector
             }
             wplayer.controls.play();
             wplayer.settings.volume = axSlider1.Value;
+            timer2.Enabled = true;
         }
 
         private void listBox1_MouseClick(object sender, MouseEventArgs e)
@@ -146,7 +157,7 @@ namespace MusicSelector
         {
             String path = fullRoute.Pop();
             listBox1.Items.Clear();
-           
+
             List<String> dirNuevo = new List<String>(Directory.GetDirectories(path));
             foreach (String dir in dirNuevo)
             {
@@ -227,7 +238,7 @@ namespace MusicSelector
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             listBox1.SelectedIndex = listBox1.SelectedIndex + 1;
             wplayer.controls.stop();
             playBack();
@@ -256,5 +267,34 @@ namespace MusicSelector
             Form form2 = new Form2();
             form2.Show();
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            double percent = 0;
+            if (wplayer.controls.currentPosition != 0 && wplayer.controls.currentItem.duration!=0) { 
+                percent = ((double)wplayer.controls.currentPosition / wplayer.controls.currentItem.duration);
+                progressBar1.Value = (int)(percent * progressBar1.Maximum);
+                }
+            
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            wplayer.controls.currentPosition += 20.0;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            wplayer.controls.currentPosition -= 20.0;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if(wplayer.controls.currentPosition > wplayer.controls.currentItem.duration-0.5)
+            {
+                listBox2.SelectedIndex = listBox2.SelectedIndex + 1;
+            }
+        }
     }
+   
 }
