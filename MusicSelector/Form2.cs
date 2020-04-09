@@ -16,5 +16,13 @@ namespace MusicSelector
         {
             InitializeComponent();
         }
+
+        private void linklabel1_LinkClick(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/MarcelDnB");
+        }
+        private void nada() {
+            
+        }
     }
 }
